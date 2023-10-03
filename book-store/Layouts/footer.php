@@ -25,7 +25,7 @@
             <div class="col-sm col-md-3">
                 <span class="mt-5 fw-bold text-info">BEST SELLERS</span>
                 <div class="d-flex">
-                    <img class="w-25 mt-2" src="Assets/images/9.jpg" alt="#">
+                    <img class="w-25 mt-2" src="Assets/images/9.jpg" alt="Image not found">
                     <div class="d-flex flex-column m-3">
                         <p class="text-light">Henry is the good dog</p>
                         <p class="text-light">$49.00 – $60.00</p>

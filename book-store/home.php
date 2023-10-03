@@ -48,7 +48,7 @@
                         card</button><br>
                 </div>
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/4.jpg" alt="">
+                    <img class="w-100" src="assets/images/4.jpg" alt="#">
                     <p class="text-center mt-3">$24.00</p>
                     <span class="spn fw-bold">When the Doves</span>
                     <p class="pera mt-3">ByHOF NURGIN</p>
