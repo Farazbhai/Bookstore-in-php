@@ -26,12 +26,12 @@
             </div>
             <div class="col-lg-1">
                 <a class=" text-dark text-decoration-none " href="">
-                    <h6 class="mx-3">EVENT</h6>
+                    <h6 class="mx-3">About</h6>
                 </a>
             </div>
             <div class="col-lg-1">
                 <a class=" text-dark text-decoration-none " href="blog.html">
-                    <h6 class="mx-3">BLOG</h6>
+                    <h6 class="mx-3">Contact</h6>
                 </a>
             </div>
 
