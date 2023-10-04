@@ -25,9 +25,8 @@
                 </a>
             </div>
             <div class="col-lg-1">
-                <a href="About_us.php" class=" text-dark text-decoration-none ">
-                    <h6 class="mx-3">About</h6>
-                </a>
+                <a href="About_us.php"><h6 class="mx-3">About</h6></a>
+                
             </div>
             <div class="col-lg-1">
                 <a class=" text-dark text-decoration-none " href="Contact_us.php">
