@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8">
-                <p>Showing 13–21 of 21 results</p>
+                <p>Showing 56-2- 21 results</p>
             </div>
             <div class="col-md-1">
                 <i class="fa fa-bars" aria-hidden="true"></i><span>Filters</span>
