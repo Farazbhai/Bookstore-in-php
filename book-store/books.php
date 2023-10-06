@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8">
-                <p>Showing 56-2- 21 results</p>
+                <p>Showing 56-3- 21 results</p>
             </div>
             <div class="col-md-1">
                 <i class="fa fa-bars" aria-hidden="true"></i><span>Filters</span>
@@ -172,7 +172,7 @@
                 <p class="text-center mt-3">$24.00</p>
                 <span class="spn fw-bold">When the Doves</span>
                 <p class="pera mt-3">ByHOF NURGIN</p>
-                QNTY:<input class="w-25 rounded border-1 " type="number"><br>
+                QNTY:<input class="w-25 rounded border-1" type="number"><br>
                 <button class="mt-2 rounded border-1 border-black bg-black text-light p-2">Add to
                     card</button><br>
             </div>
