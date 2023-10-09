@@ -30,7 +30,7 @@
         <div class="container mt-5">
             <div class="row w-100 text-center">
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/9.jpg" alt="#">
+                    <a href="detail.php"><img  class="w-100" src="assets/images/9.jpg" alt="#"></a>
                     <p class="text-center mt-3"><del>$24.00 </del> $22.00</p>
                     <span class="spn fw-bold">Bulle & Pelle</span>
                     <p class="pera mt-3">Jimmy Anderson</p>
@@ -39,7 +39,7 @@
                         card</button><br>
                 </div>
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/3.jpg" alt="#">
+                    <a href="detail.php"><img class="w-100" src="assets/images/3.jpg" alt="#"></a>
                     <p class="text-center mt-3"><del>$19.00</del> $16.00</p>
                     <span class="spn fw-bold">Peter and the Wolf</span>
                     <p class="pera mt-3">ByJOHN WALKER</p>
@@ -48,7 +48,7 @@
                         card</button><br>
                 </div>
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/4.jpg" alt="">
+                   <a href="detail.php"><img class="w-100" src="assets/images/4.jpg" alt="#"></a>
                     <p class="text-center mt-3">$24.00</p>
                     <span class="spn fw-bold">When the Doves</span>
                     <p class="pera mt-3">ByHOF NURGIN</p>
@@ -57,7 +57,7 @@
                         card</button><br>
                 </div>
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/5.jpg" alt="#">
+                    <a href="detail.php"><img class="w-100" src="assets/images/5.jpg" alt="#"></a>
                     <p class="text-center mt-3">$19.00</p>
                     <span class="spn fw-bold">The Assault</span>
                     <p class="pera mt-3">ByMESHO BUVAHR,</p>
@@ -69,7 +69,7 @@
         <div class="container mt-5">
             <div class="row w-100 text-center">
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/6.jpg" alt="#">
+                    <a href="detail.php"><img class="w-100" src="assets/images/6.jpg" alt="#"></a>
                     <p class="text-center mt-3"><del>$24.00 </del> $22.00</p>
                     <span class="spn fw-bold">Stuat broud</span>
                     <p class="pera mt-3">BySAVANNA WALKER</p>
@@ -78,7 +78,7 @@
                         card</button><br>
                 </div>
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/7.jpg" alt="#">
+                    <a href="detail.php"><img class="w-100" src="assets/images/7.jpg" alt="#"></a>
                     <p class="text-center mt-3"><del>$19.00</del> $16.00</p>
                     <span class="spn fw-bold">Peter and the enemy</span>
                     <p class="pera mt-3">ByJOHN WALKER</p>
@@ -87,7 +87,7 @@
                         card</button><br>
                 </div>
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/8.jpg" alt="#">
+                    <a href="detail.php"><img class="w-100" src="assets/images/8.jpg" alt="#"></a>
                     <p class="text-center mt-3">$24.00</p>
                     <span class="spn fw-bold">When the Doves</span>
                     <p class="pera mt-3">ByHOF NURGIN</p>
@@ -96,7 +96,7 @@
                         card</button><br>
                 </div>
                 <div class="col-sm col-md-3">
-                    <img class="w-100" src="assets/images/1.jpg" alt="#">
+                    <a href="detail.php"><img class="w-100" src="assets/images/1.jpg" alt="#"></a>
                     <p class="text-center mt-3">$19.00</p>
                     <span class="spn fw-bold">The Assault</span>
                     <p class="pera mt-3">ByMESHO BUVAHR,</p>
