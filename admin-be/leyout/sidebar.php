@@ -1,6 +1,6 @@
     <!-- Sidebar  -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
+    <nav class="bg-dark" id="sidebar">
+        <div class="sidebar-header bg-dark">
             <h3>Dashboard</h3>
         </div>
         <ul class="list-unstyled components">
@@ -11,7 +11,7 @@
                     <a href=""><i class="fa fa-home mx-2"></i>Home</a>
                 </li> -->
             <li>
-                <a href="#"><i class="fa fa-book mx-2"></i>Books</a>
+                <a href="index.php"><i class="fa fa-book mx-2"></i>Books</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-list-alt mx-2"></i>Category</a>
@@ -29,7 +29,7 @@
 
         <ul class="list-unstyled CTAs">
             <li>
-                <a class="download text-primary">Download source</a>
+                <a class="download text-dark bg-light">Download source</a>
             </li>
             <li>
                 <a class="article">Back to article</a>
