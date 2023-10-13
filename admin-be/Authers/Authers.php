@@ -7,14 +7,14 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-dark text-light">
                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                    <li class="breadcrumb-item active text-light" aria-current="page">Home </li>
+                    <li class="breadcrumb-item active text-light" aria-current="page">Authers </li>
                 </ol>
             </nav>
             <div class="table-wrapper">
                 <div class="table-title bg-dark">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>Books</h2>
+                            <h2>Authers</h2>
                         </div>
                         <div class="col-sm-6">
                             <a href="create.php" class="btn btn-success"><i class="fa fa-plus-circle" aria-hidden="true"></i> <span>Add New </span></a>
@@ -25,26 +25,14 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Images</th>
                             <th>Name</th>
-                            <th>Author</th>
-                            <th>Description</th>
-                            <th>Quantity</th>
-                            <th>Amount</th>
-                            <th>Category</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>img</td>
-                            <td>javascript</td>
-                            <td>jhon</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td>33</td>
-                            <td>$55</td>
-                            <td>History</td>
+                            <td>muslim</td>
                             <td class="col-md-2">
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fa fa-pencil" aria-hidden="true" data-toggle="tooltip" title="Edit"></i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" title="Delete"></i></a>
@@ -101,7 +89,6 @@
                 </div>
             </div>
         </div>
-        <!-- Edit Modal HTML -->
         <div id="editEmployeeModal" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -156,7 +143,6 @@
                 </div>
             </div>
         </div>
-        <?php include "../leyout/footer.php"?>
-
+        <?php include "../leyout/footer.php" ?>
     </div>
 </div>
