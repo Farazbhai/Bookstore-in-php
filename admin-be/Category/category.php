@@ -143,6 +143,6 @@
                 </div>
             </div>
         </div>
-        <?php include "../leyout/footer.php"?>
+        <?php include "../leyout/footer.php" ?>
     </div>
 </div>
