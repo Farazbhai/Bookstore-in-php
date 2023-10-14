@@ -5,25 +5,25 @@
         </div>
         <ul class="list-unstyled components">
             <li>
-                <a href=""><i class="fa fa-tachometer mx-2"></i>Dashbord</a>
+                <a href="../Dashbord/dashbord.php"><i class="fa fa-tachometer mx-2"></i>Dashbord</a>
             </li>
             <!-- <li class="active">
                     <a href=""><i class="fa fa-home mx-2"></i>Home</a>
                 </li> -->
             <li>
-                <a href="index.php"><i class="fa fa-book mx-2"></i>Books</a>
+                <a href="../books/index.php"><i class="fa fa-book mx-2"></i>Books</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-list-alt mx-2"></i>Category</a>
+                <a href="../Category/category.php"><i class="fa fa-list-alt mx-2"></i>Category</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-pencil mx-2"></i>Authers</a>
+                <a href="../Authers/Authers.php"><i class="fa fa-pencil mx-2"></i>Authers</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-shopping-cart mx-2"></i>Orders</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-users mx-2"></i>Users</a>
+                <a href="../User/user.php"><i class="fa fa-users mx-2"></i>Users</a>
             </li>
         </ul>
 
