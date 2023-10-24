@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div class="col-lg-2">
-                <img class="mx-4" src="../assets/images/logo-dark.png" width="150px" alt="#">
+                <img class="mx-4" src="./assets/images/logo-dark.png" width="150px" alt="#">
             </div>
             <div class="col-lg-1">
                 <a class=" text-dark text-decoration-none " href="books.php">
