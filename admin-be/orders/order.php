@@ -7,7 +7,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-dark text-light">
                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                    <li class="breadcrumb-item active text-light" aria-current="page">Home </li>
+                    <li class="breadcrumb-item active text-light" aria-current="page">orders</li>
                 </ol>
             </nav>
             <div class="table-wrapper">
@@ -21,53 +21,42 @@
                         </div>
                     </div>
                 </div>
-
-                <?php
-                include "../../config/connection.php";
-
-                $qry = "SELECT books.*,authors.name AS a_name,categories.name AS c_name FROM books
-                        JOIN authors ON books.author_id = authors.id
-                        JOIN categories ON books.category_id = categories.id";
-                $query = mysqli_query($con, $qry);
-                ?>
-
-
-
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Images</th>
-                            <th>Name</th>
-                            <th>Author</th>
-                            <th>Description</th>
-                            <th>Amount</th>
-                            <th>Category</th>
-                            <th>Action</th>
+                            <th>Order_id</th>
+                            <th>Book Image</th>
+                            <th>Book Name</th>
+                            <th>Status</th>
+                            <th>Quantity</th>
+                            <th>unit Price</th>
+                            <th>TotalAmount</th>
                         </tr>
                     </thead>
+
                     <tbody>
-                        <?php while ($row = mysqli_fetch_assoc($query)) {
+                        <?php include "../../config/connection.php";
+                        $select = "SELECT o.id, o.total_amount, o.status, oi.quantity, oi.unit_price, b.name, b.image FROM orders o
+JOIN orderitems oi ON oi.order_id = o.id
+JOIN books b ON b.id = oi.book_id";
+                        $query = mysqli_query($con, $select);
+                        if (mysqli_num_rows($query)) {
+
+                            foreach ($query as $row) {
                         ?>
-                            <tr>
-                                <td><?= $row['id'] ?></td>
-                                <td> <img src="upload/<?= $row['image'] ?>" width="70px" height="100px" alt="">
-                                    </td>
-                                <td><?= $row['name'] ?></td>
-                                <td><?= $row['a_name'] ?></td>
-                                <td><?= $row['description'] ?></td>
-                                <td><?= $row['price'] ?></td>
-                                <td><?= $row['c_name'] ?></td>
-                                <td class="col-md-2">
-                                    <a href="edit.php?id=<?= $row['id']; ?>" class="edit"><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i></a>
-                                    <a href="delete.php?id=<?= $row['id']; ?>" class="delete"><i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" title="Delete"></i></a>
-                                    <a href="view.php?id=<?= $row['id']; ?>" class=""><i class="fa fa-eye" aria-hidden="true" data-toggle="tooltip" title="view"></i></a>
-                                </td>
-                            </tr>
-
-
+                                <tr>
+                                    <td><?= $row['id'] ?></td>
+                                    <td><img src="../books//upload/<?= $row['image'] ?>" alt="" width="50px" srcset=""></td>
+                                    <td><?= $row['name'] ?></td>
+                                    <td><?= $row['status'] ?></td>
+                                    <td><?= $row['quantity'] ?></td>
+                                    <td><?= $row['unit_price'] ?></td>
+                                    <td><?= $row['total_amount'] ?></td>
+                                </tr>
                         <?php
-                        } ?>
+                            }
+                        }
+                        ?>
                     </tbody>
                 </table>
                 <div class="clearfix">
@@ -118,7 +107,6 @@
                 </div>
             </div>
         </div>
-        <!-- Edit Modal HTML -->
         <div id="editEmployeeModal" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -174,6 +162,5 @@
             </div>
         </div>
         <?php include "../leyout/footer.php" ?>
-
     </div>
 </div>

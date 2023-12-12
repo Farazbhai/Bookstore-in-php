@@ -1,3 +1,20 @@
+<?php include "../../config/connection.php";
+if (isset($_POST['submit'])) {
+    $username = $_POST['name'];
+    $qry = "insert into categories values('null','$username')";
+    $query=mysqli_query($con,$qry);
+
+if ($query) {
+    echo "<script>alert('Your data is insert')</script>";
+}else{
+    echo "<script>alert('Your data is not insert')</script>";
+}
+
+}
+
+
+
+?>
 <?php include "../leyout/header.php" ?>
 <div class="wrapper">
     <?php include "../leyout/sidebar.php" ?>
@@ -10,7 +27,7 @@
                 <li class="breadcrumb-item active text-light" aria-current="page">Create</li>
             </ol>
         </nav>
-        <form class="custom-form bg-light">
+        <form action="" method="POST" class="custom-form bg-light">
             <div class="row text-light bg-dark border  rounded mb-2 p-2">
                 <div class="col-sm-5">
                     <a href="category.php">
@@ -23,19 +40,16 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="id">ID:</label>
-                    <input type="text" class="form-control" id="id" name="id">
-                </div>
-                <div class="form-group col-md-6">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" id="name" name="name">
                 </div>
             </div>
-            
-            <button type="submit" class="btn btn-primary ">Submit</button>
+
+            <button name="submit" type="submit" class="btn btn-primary ">Submit</button>
         </form>
-        <?php include "../leyout/footer.php"?>
+        <?php include "../leyout/footer.php" ?>
     </div>
 </div>
 </body>
+
 </html>

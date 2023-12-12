@@ -1,3 +1,19 @@
+<?php include "../../config/connection.php";
+$sid = $_REQUEST['id'];
+$qry = "SELECT*FROM categories WHERE id='$sid'";
+$query = mysqli_query($con, $qry);
+
+if (mysqli_num_rows($query) == 1) {
+    $num = mysqli_fetch_assoc($query);
+    $user_id = $num['id'];
+    $user_name = $num['name'];
+    
+} else {
+    echo "viewer not found";
+}
+
+
+?>
 <?php include "../leyout/header.php" ?>
 <div class="wrapper">
     <?php include "../leyout/sidebar.php" ?>
@@ -28,7 +44,7 @@
                             <h6>#</h6>
                         </div>
                         <div class="col-10">
-                            <h6>1</h6>
+                            <h6><?php echo $user_id?></h6>
                         </div>
                     </div>
                 </li>
@@ -38,11 +54,12 @@
                             <h6>Name</h6>
                         </div>
                         <div class="col-10">
-                            <h6>Faraz bhai</h6>
+                            <h6><?php echo $user_name?></h6>
                         </div>
                     </div>
                 </li>
+                
         </div>
-        <?php include "../leyout/footer.php"?>
+        <?php include "../leyout/footer.php" ?>
     </div>
 </div>

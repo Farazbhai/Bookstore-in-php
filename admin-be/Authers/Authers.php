@@ -21,6 +21,10 @@
                         </div>
                     </div>
                 </div>
+                <?php include "../../config/connection.php";
+                $sql = "SELECT * FROM authors LIMIT 5";
+                $res = mysqli_query($con, $sql);
+                ?>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
@@ -30,15 +34,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>muslim</td>
-                            <td class="col-md-2">
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fa fa-pencil" aria-hidden="true" data-toggle="tooltip" title="Edit"></i></a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" title="Delete"></i></a>
-                                <a href="view.php" class=""><i class="fa fa-eye" aria-hidden="true" data-toggle="tooltip" title="view"></i></a>
-                            </td>
-                        </tr>
+                        <?php
+                        while ($row = mysqli_fetch_assoc($res)) {
+                        ?>
+                            <tr>
+                                <td><?php echo $row['id'] ?></td>
+                                <td><?php echo $row['name'] ?></td>
+                                <td class="col-md-2">
+                                    <a href="edit.php?id=<?= $row['id']; ?>" class="edit"><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i></a>
+                                    <a href="delete.php?id=<?= $row['id']; ?>" class="delete"><i class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" title="Delete"></i></a>
+                                    <a href="view.php?id=<?= $row['id']; ?>" class=""><i class="fa fa-eye" aria-hidden="true" title="view"></i></a>
+                                </td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
                     </tbody>
                 </table>
                 <div class="clearfix">

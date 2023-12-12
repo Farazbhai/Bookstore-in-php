@@ -44,7 +44,6 @@
                 </div>
             </div>
             <div id="chart_div" style="width: 900px; height: 500px;"></div>
-
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
                 google.charts.load('current', {
@@ -62,7 +61,6 @@
                         [3, 3.5],
                         [6.5, 7]
                     ]);
-
                     var options = {
                         title: 'Age vs. Weight comparison',
                         hAxis: {
@@ -77,12 +75,11 @@
                         },
                         legend: 'none'
                     };
-
                     var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
 
                     chart.draw(data, options);
                 }
             </script>
-        <?php include "../leyout/footer.php"?>
+            <?php include "../leyout/footer.php" ?>
         </div>
     </div>

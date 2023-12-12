@@ -1,3 +1,18 @@
+<?php include "../../config/connection.php";
+if ($sid = $_REQUEST['id']) {
+    $res = mysqli_query($con, "SELECT*FROM users WHERE id='$sid'");
+    if (mysqli_num_rows($res) == 1) {
+        $num = mysqli_fetch_assoc($res);
+        $user_id = $num['id'];
+        $user_name = $num['name'];
+        $user_email = $num['email'];
+    } else {
+        echo "viewer not found";
+    }
+} else {
+    echo "Invalid request";
+}
+?>
 <?php include "../leyout/header.php" ?>
 <div class="wrapper">
     <?php include "../leyout/sidebar.php" ?>
@@ -28,7 +43,7 @@
                             <h6>#</h6>
                         </div>
                         <div class="col-10">
-                            <h6>1</h6>
+                            <h6><?php echo $user_id ?></h6>
                         </div>
                     </div>
                 </li>
@@ -38,7 +53,7 @@
                             <h6>Name</h6>
                         </div>
                         <div class="col-10">
-                            <h6>Faraz bhai</h6>
+                            <h6><?php echo $user_name ?></h6>
                         </div>
                     </div>
                 </li>
@@ -48,21 +63,11 @@
                             <h6>Email</h6>
                         </div>
                         <div class="col-10">
-                            <h6>Faraz bhai@gmail.com</h6>
+                            <h6><?php echo $user_email ?></h6>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2">
-                            <h6>Contact</h6>
-                        </div>
-                        <div class="col-10">
-                            <h6 class="w-75">O3047023674</h6>
-                        </div>
-                    </div>
-                </li>
+
+                <?php include "../leyout/footer.php" ?>
         </div>
-        <?php include "../leyout/footer.php" ?>
     </div>
-</div>

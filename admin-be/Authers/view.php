@@ -1,3 +1,16 @@
+<?php include "../../config/connection.php";
+$sid=$_REQUEST['id'];
+$select="SELECT*FROM authors WHERE id='$sid'";
+$query=mysqli_query($con,$select);
+if (mysqli_num_rows($query)==1) {
+    $num=mysqli_fetch_assoc($query);
+    $user_id=$num['id'];
+    $user_name=$num['name'];
+}else{
+    echo "viewer not found";
+
+}
+?>
 <?php include "../leyout/header.php" ?>
 <div class="wrapper">
     <?php include "../leyout/sidebar.php" ?>
@@ -28,7 +41,7 @@
                             <h6>#</h6>
                         </div>
                         <div class="col-10">
-                            <h6>1</h6>
+                            <h6><?php echo $user_id?></h6>
                         </div>
                     </div>
                 </li>
@@ -38,7 +51,7 @@
                             <h6>Name</h6>
                         </div>
                         <div class="col-10">
-                            <h6>Faraz bhai</h6>
+                            <h6><?php echo $user_name?></h6>
                         </div>
                     </div>
                 </li>

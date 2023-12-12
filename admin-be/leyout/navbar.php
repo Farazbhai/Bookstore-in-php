@@ -17,14 +17,14 @@
                     </li>
                     <li class="nav-item">
                         <ul class="navbar-nav bg-body-secondary ">
-                            <li class="nav-item dropdown">
+                            <li style="display: flex; justify-content: center;
+                            align-items: center;" class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle mr-4" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../assets/img/icon-5359553_1280.webp" width="40" height="40" class="rounded-circle">
+                                <a  style="margin-right: 20px;"class="dropdown-item" href="#">Admin</a>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Dashboard</a>
-                                    <a class="dropdown-item" href="#">Edit Profile</a>
-                                    <a class="dropdown-item" href="#">Log Out</a>
+                                    <a class="dropdown-item" href="../Auth/Login.php">Log Out</a>
                                 </div>
                             </li>
                         </ul>
